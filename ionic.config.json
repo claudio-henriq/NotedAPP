@@ -1,0 +1,7 @@
+{
+  "name": "NotedApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{action}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding [ngClass]="background">
+  <form [formGroup]="formNote" novalidate >
+    <ion-list no-lines>
+      <ion-item>
+        <ion-input placeholder="Título" formControlName="title" clearInput></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-textarea placeholder="Anotação..." formControlName="text" rows="30"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Cor da Nota</ion-label>
+        <ion-select formControlName="color" (ionChange)="setColor($event)">
+          <ion-option *ngFor="let cor of colors" [value]="cor">{{cor}}</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>

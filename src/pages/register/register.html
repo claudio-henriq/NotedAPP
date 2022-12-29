@@ -1,0 +1,41 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Login Page</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row align-items-center justify-content-center>
+      <ion-col col-lg-3 col-md-4 col-sm-6 >
+        <ion-card>
+          <ion-card-header text-center>
+            Noted
+          </ion-card-header>
+          <ion-card-content>
+            <form (ngSubmit)="submit()" [formGroup]="formRegister" >
+              <ion-list no-lines>
+                <ion-item>
+                  <ion-label floating>Nome</ion-label>
+                  <ion-input formControlName="name" type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label floating>Usuário</ion-label>
+                  <ion-input formControlName="user" type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label floating>Senha</ion-label>
+                  <ion-input formControlName="password" type="password" min="6" max="15" clearInput></ion-input>
+                </ion-item>
+                <ion-item text-center>
+                  <button block ion-button type="submit">Cadastre-se</button>
+                </ion-item>
+              </ion-list>
+            </form>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

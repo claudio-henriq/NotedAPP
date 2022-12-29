@@ -1,0 +1,28 @@
+page-login {
+    .content{
+        background: #ffff97;
+        .scroll-content{
+            overflow: hidden;
+        }
+        .grid{
+            height: 100%;
+
+            .row{
+                height: 100%;
+            }
+        }
+
+        .card-ios, .card-md{
+            border-radius: 8px;
+
+            .card-header{
+                padding: 16px 16px 0;
+                font-size: 3rem;
+            }
+        }
+
+        .singup{
+            font-size: 10px;
+        }
+    }
+}
