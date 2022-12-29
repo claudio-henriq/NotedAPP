@@ -1,4 +1,4 @@
-# NotedAPP #Interview
+# NotedAPP Interview
 
 APP desenvolvido com Framework Ionic 3 com Capacitor e nodeJS versão 14.17.6
 
@@ -12,7 +12,7 @@ const production = false;
 
 environment = {
   url: production? 'url_producao':'url_local',
-  token: "toke"
+  token: "token"
 }
 ```
 
